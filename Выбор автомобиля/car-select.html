@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Выбор автомобиля</title>
+        <link rel="stylesheet" type="text/css" href="css/car-celect.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="conteier">
+            <header>
+                <a href="" class="logo">
+                    <img src="images/auto-3590414_1280 (1).png" class="logo">
+                </a>
+                <ul class="menu-main">
+                    <li><a href="/Главная/index.html">Главная</a></li>
+                    <li><a href="/Филиалы/branches.html">Филиалы</a></li>
+                    <li><a href="/Бронирование/booking.html">Бронирование</a></li>
+                    <li><a href="/Вход/login.html">Вход</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="intro">
+            <div class="box">
+                <img class="img" src="images/car_puzzle.png">
+                <h4>Марка:</h4>
+                <select size="1"  name="hero[]">
+                    <option disabled>Выберите марку машины</option>
+                    <option value="Toyota">Toyota</option>
+                    <option selected value="BMW">BMW</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Nissan">Nissan</option>
+                </select>
+
+                <h4>Модель:</h4>
+                <select size="1"  name="hero[]">
+                    <option disabled>Выберите модель машины</option>
+                    <option value="GT86">GT86</option>
+                    <option selected value="GTR">GTR</option>
+                    <option value="M5 Competion">M5 Competion</option>
+                    <option value="AMG GT">AMG GT</option>
+                    <option value="CRV">CRV</option>
+                </select>
+            
+        
+                <h4>Цвет:</h4>
+                <select size="1"  name="hero[]" >
+                    <option disabled>Выберите цвет машины</option>
+                    <option value="Черный">Черный</option>
+                    <option selected value="Серый">Серый</option>
+                    <option value="Белый">Белый</option>
+                    <option value="Красный">Красный</option>
+                </select>
+            
+                <h4>Тип двигателя:</h4>
+                <select size="1"  name="hero[]" style="width: 150px;">
+                    <option disabled>Выберите тип двигателя</option>
+                    <option value="Дизельный">Дизельный</option>
+                    <option selected value="Бензиновый">Бензиновый</option>
+                </select>
+            
+                <h4>Тип КПП:</h4>
+                <select size="1"  name="hero[]" style="width: 150px;">
+                    <option disabled>Выберите тип коробки передач</option>
+                    <option value="МКП">МКП</option>
+                    <option selected value="АКП">АКП</option>
+                </select>
+                <br>
+                <button class="btn_search  btn--red"><h2>Выбрать</h2></button>
+                <p>
+                <button class="btn_search  btn--blue"><h2>Удалить</h2></button>             
+                </p>
+            </div>
+        </div>
+        <footer>
+            <p> Телефон "8 (800) 555-35-35" </p>
+            <ul class="menu-main1">
+                <li><a href="/Главная/index.html" class="current">Главная</a></li>
+                <li><a href="/Филиалы/branches.html">Филиалы</a></li>
+                <li><a href="/Бронирование/booking.html">Бронирование</a></li>
+                <li><a href="/Вход/login.html">Вход</a></li>
+            </ul>
+        </footer>
+        </body>
+</html>

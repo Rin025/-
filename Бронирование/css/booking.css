@@ -1,0 +1,197 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa;
+  background: rgb(255, 255, 255);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+body::before,
+body::after {
+  content: "";
+  display: table;
+  clear: both;
+ }
+body * {
+  box-sizing: inherit;
+ }
+ .logo {
+  width: 6%;
+  margin-left: 1.5%;
+  margin-top: 3%;
+  margin-bottom: 5%
+}
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: white;
+  margin-top: -10%;
+  margin-bottom: 5%;
+}
+.search {
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2%
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover{color: #1c6eb6;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #1c6eb6;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+.form {
+  margin-left: 25%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+.forma {
+  display: inline-block;
+  margin-left: 2%;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.forma1 {
+  display: inline-block;
+  margin-left: 2%;
+  margin-top: -5%;
+  border: 2px solid;
+  border-radius: 5px;
+}
+input {
+  border: 1px solid #18466d;
+  border-radius: 5px;
+}
+.bron, .bron_nes, .oform, .otp {
+  margin-top: 1%;
+  border: 0px;
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 16px;
+}
+.btn {
+  margin-top: 3%;
+  text-align: center;
+}
+.bron:hover, .bron_nes:hover, .oform:hover, .otp:hover {
+  background-color: #1c6eb6;
+}
+.oform a:active, .oform a:hover, .oform a:visited, .oform a:link {
+  text-decoration: none;
+  color: white;
+}
+footer {
+    background: #18466d;
+}
+footer p {
+    text-align: center;
+    margin-top: 2%;
+    font-size: 16px;
+    color: #9d999d;
+}
+.menu-main1 {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    margin-top: -1%;
+}
+  .menu-main1 li {display: inline-block;}
+  .menu-main1 li:after {
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+  }
+  .menu-main1 li:last-child:after {content: none;}
+  .menu-main1 a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+  }
+  .menu-main1 a, .menu-main1 a:visited {color: #9d999d;}
+  .menu-main1 a.current, .menu-main1 a:hover{color: #1c6eb6;}
+  .menu-main1 a:before,
+  .menu-main1 a:after {
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #1c6eb6;
+    transition: .8s;
+  }
+  .menu-main1 a:hover:before, .menu-main1 .current:before {left: 0;}
+  .menu-main1 a:hover:after, .menu-main1 .current:after {right: 0;}   
+  @media (max-width: 550px) {
+  .menu-main1 {padding-top: 0;}
+  .menu-main1 li {display: block;}
+  .menu-main1 li:after {content: none;}
+  .menu-main1 a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+  }
+  }
